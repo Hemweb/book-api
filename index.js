@@ -50,7 +50,6 @@ mongoose.connect(mongoDB,  { useNewUrlParser: true, useUnifiedTopology: true }).
 
 
 app.get("/", (req, res) => {
-    const getAllBooks = db.books;
     return res.json({"WELCOME 🙏": `to my backend software for the book company`});
 });
 
